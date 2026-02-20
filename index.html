@@ -1357,7 +1357,8 @@ function updateUptime() {
 setInterval(updateUptime, 1000);
 
 // --- 3. عداد الوقت المستهدف لشاشة القفل (لغاية 20/2/2026 الساعة 7:00 مساءً) ---
-const targetDate = new Date('February 20, 2026 23::17:00').getTime();
+// التعديل ليفتح الساعة 11:18 مساءً اليوم
+const targetDate = new Date('February 20, 2026 23:20:00').getTime();
 
 const timerInt = setInterval(() => {
     const now = new Date().getTime();
@@ -1841,4 +1842,5 @@ function unlockScratch() {
 </body>
 
 </html>
+
 
